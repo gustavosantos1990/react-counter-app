@@ -43,7 +43,17 @@ class App extends Component {
     this.setState({ counters });
   };
 
+  constructor() {
+    super();
+    console.log("App - Constructor");
+  }
+
+  componentDidMount() {
+    console.log("App - Mounted");
+  }
+
   render() {
+    console.log("App - Rendered");
     return (
       <React.Fragment>
         <NavBar
